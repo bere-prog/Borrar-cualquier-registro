@@ -61,7 +61,6 @@ def products_view(page: ft.Page) -> ft.Control:
     total_items = 0
     total_text = ft.Text("Total de productos: (cargando...)", style=Textos_estilos.H4)
 
-    # Nota: Agregamos una columna extra para las acciones
     columnas = [
         ft.DataColumn(label=ft.Text("Nombre", style=Textos_estilos.H4)),
         ft.DataColumn(label=ft.Text("Cantidad", style=Textos_estilos.H4)),
@@ -71,7 +70,6 @@ def products_view(page: ft.Page) -> ft.Control:
         ft.DataColumn(label=ft.Text("Acciones", style=Textos_estilos.H4)), 
     ]
 
-    # Paso 1: Agregar DataCell vacío en la fila de ejemplo
     data = [
         ft.DataRow(
             cells=[
